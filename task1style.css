@@ -1,0 +1,36 @@
+:root {
+  --primary-color: rgb(100, 100, 100);
+  --secondary-color: rgb(122, 122, 122);
+  --default-shadow: 5px 5px 20px 0 rgba(49, 81, 82, 0.5);
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.cards-container {
+  display: flex;
+}
+
+.card {
+  display: inline-block;
+  width: 100vw;
+  height: 50vh;
+  margin: 1em 0.5em;
+  overflow: hidden;
+  border-radius: 1em;
+  box-shadow: var(--default-shadow);
+
+  & .card__title {
+    color: var(--primary-color);
+  }
+
+  & .card__description {
+    color: var(--secondary-color);
+  }
+}
