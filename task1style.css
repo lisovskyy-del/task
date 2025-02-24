@@ -9,22 +9,26 @@ body {
 }
 
 .container {
+  display: inline-block;
   max-width: 1400px;
-  margin: 0 auto;
 }
 
 .cards-container {
+  padding: 1em;
   display: flex;
 }
 
 .card {
-  display: inline-block;
-  width: 100vw;
-  height: 50vh;
   margin: 1em 0.5em;
   overflow: hidden;
   border-radius: 1em;
   box-shadow: var(--default-shadow);
+
+  & .card__preview {
+    object-fit: cover;
+    width: 16vw;
+    height: 15vh;
+  }
 
   & .card__title {
     color: var(--primary-color);
