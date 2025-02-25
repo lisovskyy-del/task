@@ -19,6 +19,7 @@ body {
 
 .card {
   display: inline-block;
+  max-inline-size: 10lh;
   margin: 1em 0.5em;
   overflow: hidden;
   border-radius: 1em;
@@ -35,7 +36,6 @@ body {
   }
 
   & .card__description {
-    max-inline-size: 10lh;
     color: var(--secondary-color);
   }
 }
