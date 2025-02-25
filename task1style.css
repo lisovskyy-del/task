@@ -2,23 +2,23 @@
   --primary-color: rgb(100, 100, 100);
   --secondary-color: rgb(122, 122, 122);
   --default-shadow: 5px 5px 20px 0 rgba(49, 81, 82, 0.5);
+  --font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-family);
 }
 
 .container {
-  display: inline-block;
   max-width: 1400px;
 }
 
 .cards-container {
   padding: 1em;
-  display: flex;
 }
 
 .card {
+  display: inline-block;
   margin: 1em 0.5em;
   overflow: hidden;
   border-radius: 1em;
@@ -26,7 +26,7 @@ body {
 
   & .card__preview {
     object-fit: cover;
-    width: 16vw;
+    width: 17vw;
     height: 15vh;
   }
 
@@ -35,6 +35,7 @@ body {
   }
 
   & .card__description {
+    max-inline-size: 10lh;
     color: var(--secondary-color);
   }
 }
